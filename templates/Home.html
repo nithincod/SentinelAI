@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zxx">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Solutions &amp; Business Services Responsive HTML5 Bootstrap5  Website Template">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="../static/css/vendors/bootstrap.min.css">
+
+    <!-- animate.css file -->
+    <link rel="stylesheet" href="../static/css/vendors/animate.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../static/css/vendors/swiper-bundle.min.css">
+
+    <!-- flaticon -->
+    <link rel="stylesheet" href="../static/css/vendors/flaticon/flaticon.css">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="../static/css/vendors/all.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="../static/css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="../static/css/vendors/jquery.fancybox.min.css">
+
+    <!-- fonts site preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- fonts site preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/hero/sheild.svg" />
+
+    <!-- main-LTR -->
+    <link rel="stylesheet" href="../static/css/Home.css">
+    <title>SenitelAI</title>
+</head>
+
+<body class=" dark-theme " onload="setUsername()">
+    <!--Start Page Header-->
+    <header class=" page-header   header-basic" id="page-header">
+        <div class="container">
+            <nav class="menu-navbar">
+                <div class="header-logo"><a class="logo-link" href="/profile"><span class="website-name">SenitelAI</span></a></div>
+                <div class="links menu-wrapper">
+                    <ul class="list-js links-list">
+                        <li class="menu-item"><a class="menu-link active" href="#">home  </a></li>
+                        <!-- <li class="menu-item"><a class="menu-link  " href="about-us.html">about us </a></li>
+                        
+                        <li class="menu-item"><a class="menu-link  " href="contact-us.html">contact us </a></li> -->
+                    </ul>
+                </div>
+                <div class="controls-box">
+                    <!--Menu Toggler button-->
+                    <div class="control  menu-toggler"><span></span><span></span><span></span></div>
+                    <a id="name1" readonly >Hello, <span id="username"></span></a>
+                    <!--search Icon button-->
+                    <!-- <div class="control header-search-btn"><i class="bi bi-search icon"></i></div> -->
+                    <!--Dark/Light mode button-->
+                    <div class="mode-switcher ">
+                        <div class="switch-inner go-light " title="Switch To Light Mode "><i class="bi bi-sun icon "></i></div>
+                        <div class="switch-inner go-dark" title="Switch To Dark Mode "><i class="bi bi-moon icon "></i></div>
+                    </div>
+                    <div id="dropdown">
+                        <a  style="margin-left: 1.5rem; margin-right: -1.5rem;" href="#" class="dropbtn"><img class="img-fluid " src="../static/images/hero/user-regular.svg" alt="" draggable="false" style="height: 30px;"></a>
+                        <div id="dropdown-content">
+                            <a id="name" readonly ><span id="usrnme"></span></a>
+                            <a onclick="logout()">Log Out? :-[</a>
+                    </div>
+                    <!--mini shoping cart-->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--End Page Header-->
+    <!-- Start  Page hero-->
+    <section class="page-hero  d-flex align-items-center" id="page-hero">
+        <div class="overlay-photo-image-bg" data-bg-img="../static/images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
+        <div class="particles-js  dots" id="particles-js"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-9 ">
+                    <!--Start of .hero-text-area-->
+                    <div class="hero-text-area">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="pre-title">We welcome you to</div>
+                                <h1 class="hero-title" class="text-lowercase">test the <span class="text-uppercase">SenitelAI</span></h1>
+                                <div class="col-10">
+                                    <p class="hero-subtitle ">
+                                        Here are the possible ways by which you can<br>
+                                        test our product ;-)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="cta-links-area "><a class=" btn-outline cta-link cta-link-primary " href="/webcam">Live WebCam</a>
+                                <div class="cta-links-area "><a class=" btn-outline cta-link cta-link-primary " href="/webcam">Video</a>
+                                    <!-- <div class="play-btn-row-dir ">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=QI4_dGvZ5yE&amp;ab_channel=JUtah" role="button" title="play" data-fancybox="data-fancybox">
+                                            <div class="play-video-btn">
+                                                <div class="play-btn"> <i class="fas fa-play icon"></i></div>
+                                            </div>
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--start of image-area -->
+                <div class="col-8   mx-sm-auto col-lg-4 text-center " data-tilt>
+                    <!-- <div class="hero-image-area mb-md-5 mb-lg-0">                      
+                            <img class="img-fluid " src="..static/images/hero/sheild.svg" alt="" draggable="false"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of .hero-text-area-->
+    <!-- End  Page hero-->
+
+    <!--     JQuery     -->
+    <script src="../static/js/vendors/jquery-3.6.1.min.js"></script>
+
+    <!--     appear     -->
+    <script src="../static/js/vendors/appear.min.js"></script>
+
+    <!--     bootstrap     -->
+    <script src="../static/js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!--     countTo     -->
+    <script src="../static/js/vendors/jquery.countTo.js"></script>
+
+    <!--     wow     -->
+    <script src="../static/js/vendors/wow.min.js"></script>
+
+    <!--     swiper     -->
+    <script src="../static/js/vendors/swiper-bundle.min.js"></script>
+
+    <!--     particles     -->
+    <script src="../static/js/vendors/particles.min.js"></script>
+
+    <!--     Vanilla-tilt     -->
+    <script src="../static/js/vendors/vanilla-tilt.min.js"></script>
+
+    <!--     isotope     -->
+    <script src="../static/js/vendors/isotope-min.js"></script>
+
+    <!--     fancybox     -->
+    <script src="../static/js/vendors/jquery.fancybox.min.js"></script>
+
+    <!--     main     -->
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/Home.js"></script>
+    <script src="https://embed.elephant.ai/static/js/chatbot.js" id="e244e627-75e6-496c-87ac-a6c5e766e0fb"></script>
+</body>
+
+</html>

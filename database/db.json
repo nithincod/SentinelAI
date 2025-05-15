@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "id": "Maskboi",
+      "pwd": "asdfasdf",
+      "name": "Aviral",
+      "email": "aviralofficial1729@gmail.com"
+    },
+    {
+      "id": "avi",
+      "pwd": "123123",
+      "name": "Aviral Katiyar",
+      "email": "aks@gmail.com"
+    },
+    {
+      "id": "test",
+      "pwd": "123456789",
+      "name": "test",
+      "email": "TEST@GMAIL.COM"
+    },
+    {
+      "id": "disha",
+      "pwd": "qwertyuiop",
+      "name": "sid",
+      "email": "disha@disha.com"
+    },
+    {
+      "id": "Saketh",
+      "pwd": "Saketh",
+      "name": "Saketh",
+      "email": "pavan.sakethram@gmail.com"
+    },
+    {
+      "id": "kashly",
+      "pwd": "iloveavi",
+      "name": "kashish",
+      "email": "kash@gmail.com"
+    },
+    {
+      "id": "Siva",
+      "pwd": "12345@qwerty",
+      "name": "Siva",
+      "email": "sagiliprasad2003@gmail.com"
+    }
+  ]
+}

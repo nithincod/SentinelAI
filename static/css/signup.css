@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    /* background: #0d5f93; */
+    /* background-image: url("../images/sections-bg-images/signbg.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/sections-bg-images/signbg.jpg");
+    filter: blur(8px); */
+}
+.bg-img{
+    position: absolute;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/sections-bg-images/signbg.jpg");
+    filter: blur(8px);
+    height: 900px;
+    width: 1600px;
+    overflow: hidden;
+}
+.container{
+    padding: 40px;
+    border-radius: 20px;
+    /* width: 60%; */
+    z-index: 99;
+    border: 8px solid #8bedfd;
+    box-shadow: -5px -5px 15px rgba(225, 225, 225, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),inset -5px -5px 15px rgba(225, 225, 225, 0.1),inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.container .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.container .form h2{
+    color: #ddfefe;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.container .form .inputBox{
+    position: relative;
+    width: 400px;
+
+}
+.container .form .inputBox input{
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    background: #223243;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(225, 225, 225, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35);
+    outline: none;
+    transition: 0.5s;
+}
+.container .form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+}
+.container .form .inputBox i{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 25px;
+    padding: 2px 0;
+    padding-right: 8px;
+    color: #00dfc4;
+    border-right: 1px solid #00dfc4;
+}
+/* .container .form .inputBox:hover{
+    cursor: pointer;
+} */
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span{
+    color: #00dfc4;
+    border: 1px solid #00dfc4;
+    background: #223243;
+    transform: translateX(25px) translateY(-9px);
+    font-size: 0.6em;
+    padding: 0 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+}
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus{
+    border: 1px solid #00dfc4;
+}
+.container .form .inputBox input[type="button"]{
+    background: #00dfc4;
+    color: #223243;
+    padding: 10px 0;
+    width: 400px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(225, 225, 225, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),inset -5px -5px 15px rgba(225, 225, 225, 0.1),inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.container .form .inputBox input[type="button"]:hover{
+    background: #a7ffec;
+    cursor: pointer;
+}
+.container .form p{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 300;
+}
+.container .form p a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+.container .form.signin,.container.signinForm .form.signup{
+    display: none;
+}
+.container.signinForm .form.signin{
+    display: flex;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Webcam Detection</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/uicss.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="../static/images/new.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <section class="head">
+      <div class="head-text cen">
+        <h1 class="glow"><a class="logo-link-2" href="/profile">Guardian Vision</a></h1>
+        <p>Test with your Webcam</p>
+      </div>
+    </section>
+
+    <section class="webcam">
+      <div class="flx">
+        <div class="frst">
+          <p>Enter email you want to send alert</p>
+          <div class="textInputWrapper">
+            <input placeholder="Email Here" type="text" class="textInput" id="empmail" oninput="validate()">
+          </div>
+
+          <p>Enter Number you want to send alert</p>
+          <div class="textInputWrapper">
+            <input placeholder="Number Here" type="text" class="textInput" id="empnumber">
+          </div>
+
+          <button class="button dis" id="webbtn" onclick="webon()" disabled><b>Start Webcam</b></button>
+          <button class="button hide" id="webbtn2" onclick="window.location.reload()"><b>Stop Webcam</b></button>
+        </div>
+
+        <div id="webarea">
+          <div class="cube" id="load1">
+            <div class="topD"></div>
+            <div><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span></div>
+            <div class="cube2">
+              <div><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span></div>
+              <div class="cube3">
+                <div class="top3"></div>
+                <div><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="alignved">
+            <div class="temp hide" id="webtemp">Webcam Here</div>
+          </div>
+
+          <div class="cent">
+            <div class="loading-bar hide" id="load2">Loading</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    let load1 = document.getElementById('load1');
+    let temp = document.getElementById('webtemp');
+    let load2 = document.getElementById('load2');
+    let startbut = document.getElementById('webbtn');
+    let stopbut = document.getElementById('webbtn2');
+    let con = 0;
+
+    function webon() {
+      let email = document.getElementById('empmail').value;
+      if (!email || !email.includes('@')) {
+        Swal.fire({ icon: 'error', title: 'Oops...', text: 'Valid Email Required...' });
+        return;
+      }
+
+      load1.classList.remove('hide');
+      load2.classList.remove('hide');
+
+      let url = `/webapp?email=${email}`;
+      temp.innerHTML = `<img class="imgweb" src="${url}" alt="Webcam Feed">`;
+
+      startbut.classList.add('hide');
+      stopbut.classList.remove('hide');
+
+      setTimeout(() => {
+        temp.classList.remove('hide');
+        load1.classList.add('hide');
+        load2.classList.add('hide');
+      }, 7000);
+    }
+
+    function validate() {
+      let email = document.getElementById("empmail").value;
+      if (email && email.includes("@")) {
+        startbut.removeAttribute("disabled");
+      } else {
+        startbut.setAttribute("disabled", true);
+      }
+    }
+  </script>
+</body>
+
+</html>

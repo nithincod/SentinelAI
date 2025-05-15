@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/video.css" />
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+
+    <!-- animate.css file -->
+    <link rel="stylesheet" href="css/vendors/animate.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+
+    <!-- flaticon -->
+    <link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="css/vendors/all.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+
+    <!-- fonts site preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- fonts site preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/hero/eye-solid-1.svg" />
+    <title>TEST US</title>
+  </head>
+
+  <body>
+    <div class="video-container">
+      <!-- <button>jdsfg</button> -->
+      <video class="vid-1" autoplay loop muted>
+        <source src="../static/images/bg1.mp4" type="video/mp4" style="position: fixed;"></video>
+      
+        <header class=" page-header   header-basic" id="page-header" style="margin-bottom: 4rem;">
+        
+          <div class="container" style="color: white; ">
+              <nav class="menu-navbar" id="navbar">
+                  <!-- <div class="header-logo"><a class="logo-link" href="#"><span class="website-name">Guardian Vision</span></a></div> -->
+                  <div class="links menu-wrapper ">
+                      <ul class="list-js links-list">
+
+                          <li class="menu-item" style="margin-left: 20rem;"><a class="menu-link  active" href="/profile"><span style="font-size: 36px;">Guardian Vision</span></a></li>
+             
+                        </ul>
+                        
+                  </div>
+                  <div class="controls-box">
+                      <!-- <div class="cta-links-area ">
+                          <a class=" btn-link cta-link cta-link-primary " style="margin-right: 9rem; font-size: 24px; background-color: rgba(255,255,255,0.4); border-radius: 5px; " href="#0">Home</a>  
+                      </div> -->
+                      <!--mini shoping cart-->
+                  </div>
+              </nav>
+          </div>
+      </header>
+      <!--End Page Header-->
+
+        <!-- <header class="head-1" style="z-index: 20;">
+          <ul style="margin-right: -30%;">
+            <li class="left" style="margin-left: -0.5rem; padding-top: 1.5rem;"><h1><strong>Guardian Vision</strong></h1></li>
+            <li class="right"><button>Home</button></li>
+          </ul>
+          <hr />
+        </header> -->
+        
+        <section style="margin-top: 6rem;">
+          <div class="flex">
+            <div class="flex-1">
+              <div class="text" style="font-size: 20px; text-align: center; margin: 0.5rem 0.5rem;">Want to test the<br>
+                <span style="font-size: 26px; font-weight: 600;">Guardian Vision?</span><br><br>
+                Feel free to do so! <br> Upload a video below and see yourself ;-)
+              </div>
+              <form
+              method="POST"
+              enctype="multipart/form-data"
+              style="align-content: center; text-align: center; display: flex"
+              >
+              
+              <!-- <input type="file" style="padding-left: 4rem;"> -->
+            </form>
+              
+              {{form.hidden_tag()}} {{form.file(class_="custom-file-input")}}
+              
+              <div style="display: flex; justify-content: center;">
+                <button type="submit" name="favorite" value="x" class="btnCustom">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="flex-2">
+            <div style="display: flex; justify-content: center; align-items: center; max-height: 24rem;">
+            <img src="{{ url_for('video') }}" alt="Upload video" />
+          </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+          <a style= "font-size: 24px; background-color: rgba(255,255,255,0.4); border-radius: 70% 70%; height: auto; width: 8rem; text-align: center;" href="/profile">Home</a>  
+      </div>
+
+    </section>
+    
+    <!-- <div>
+  The video
+  <video autoplay muted loop id="myVideo">
+    <source src="../static/videos/science-159053.mp4" type="video/mp4">
+  </video>
+  
+  Optional: some overlay text to describe the video
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum...</p>
+    Use a button to pause/play the video with JavaScript
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+ </div>
+</body>
+
+  <script>
+    // Get the video
+    // var video = document.getElementById("myVideo");
+
+    // // Get the button
+    // var btn = document.getElementById("myBtn");
+
+    // // Pause and play the video, and change the button text
+    // function myFunction() {
+    //   if (video.paused) {
+    //     video.play();
+    //     btn.innerHTML = "Pause";
+    //   } else {
+    //     video.pause();
+    //     btn.innerHTML = "Play";
+    //   }
+    // }
+  </script> -->
+  <script src="https://embed.elephant.ai/static/js/chatbot.js" id="e244e627-75e6-496c-87ac-a6c5e766e0fb"></script>
+</html>

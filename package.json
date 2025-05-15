@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "debug": "^4.3.4",
+    "flask": "^0.2.10",
+    "sweetalert2": "^11.7.3"
+  },
+  "name": "sign-in-up-page",
+  "description": "Violence detection ML model to detect suspicious activities in real-time through CCTV or any camera, and send immediate alert to the respective authorities.",
+  "version": "1.0.0",
+  "main": "signup.js",
+  "scripts": {
+    "start": "npx json-server --watch ./database/db.json --port 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
