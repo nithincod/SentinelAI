@@ -1,6 +1,6 @@
-# Guardian Vision
+# SenitelAI
 
-<p> <img src="https://user-images.githubusercontent.com/124444723/233845771-bd346166-71c1-4213-a015-9ce94515c755.jpg" alt="Guardian Vision Logo" width="100px" height="100px" style="background: #fff;"> </p>
+<p> <img src="https://user-images.githubusercontent.com/124444723/233845771-bd346166-71c1-4213-a015-9ce94515c755.jpg" alt="SenitelAI Logo" width="100px" height="100px" style="background: #fff;"> </p>
 
 <p> Violence detection ML model to detect suspicious activities in real-time through CCTV or any camera, and send immediate alert to the respective authorities. </p>
 
@@ -8,7 +8,81 @@
 
 ## Overview 🤖
 
-The project aims to develop a system for violence detection using CCTV footage and providing an immediate alert to the police. The system will use advanced image processing and machine learning techniques to analyze the CCTV footage in real-time and detect any violent behavior or actions. Once detected, an automatic alert will be sent to the police, enabling them to respond quickly and take appropriate action. The system has the potential to enhance public safety and reduce crime rates in public areas.
+The project aims to develop a system for violence detection using CCTV footage and providing an immediate alert to the police. The system will use advanced image processing and machine learning techniques to analyze the CCTV footage in real-time and detect any violent behavior or actions. Once detected, an automatic alert will be sent to the police, enabling them to respond quickly and take appropriate action. The system has the potential to enhance public sa# SenitelAI
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124444723/233845771-bd346166-71c1-4213-a015-9ce94515c755.jpg" alt="SenitelAI Logo" width="100px" height="100px" style="background: #fff;">
+</p>
+
+## 📌 Project Overview
+
+**SenitelAI** is an AI-powered violence detection system designed to monitor CCTV footage or camera feeds in real-time, detecting suspicious or violent activities and promptly sending alerts to relevant authorities. Leveraging advanced computer vision and machine learning techniques, this solution aims to enhance public safety and enable swift incident response.
+
+The system can detect physical violence, weapon-related threats, and thefts, ensuring authorities are alerted immediately with precise timestamps and location details, reducing risks and improving crime prevention in public spaces.
+
+---
+
+## 📖 Features
+
+- **Real-time Physical Violence Detection via Webcam**
+- **Video Upload Functionality for Suspicious Activity Analysis**
+- **Weapon and Theft Detection**
+- **Instant SMS and Email Alert System**
+- **Responsive User Interface with Light/Dark Mode Toggle**
+- **Modern, Interactive Web Experience**
+
+---
+
+## 📊 Project Workflow
+
+- **Home Page:**  
+  Provides an overview of the platform, its features, and a pathway to register or log in.
+
+- **User Registration:**  
+  Enables new users to create an account securely.
+
+- **User Login:**  
+  Allows registered users to log into the platform using their credentials.
+
+- **Dashboard / User Interface:**  
+  Grants access to the platform’s core services — real-time AI violence detection via webcam and video upload analysis.
+
+- **Webcam Detection:**  
+  Users can enter emails of contacts to notify. Upon violence detection, alerts are sent to authorities and the listed contacts.
+
+- **Video Upload:**  
+  Allows users to upload videos for analysis. If suspicious activities are detected, the system captures and sends an image of the specific frame as an alert.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+**Backend:**
+- Node.js
+- JSON Server
+
+**Machine Learning & AI:**
+- Python
+- Flask
+- YOLO (You Only Look Once) Models
+
+---
+
+## ⚙️ Installation Guide
+
+### 📦 Install JSON Server and Dependencies
+
+```bash
+npm install
+npm init -y
+npm install -g json-server
+fety and reduce crime rates in public areas.
 
 ## Usage
 
@@ -16,14 +90,14 @@ To use this project, you need to have a webcam connected to your computer. The p
 
 ## Features 🦾
 
-- Weapon Detection
+- Weapon Detection and Theft detection
 - Light/dark mode toggle
 - Enhance the user experience creating highly reactive website.
 
 ## Flow of the Project 💻
 
 <li>  Home Page</li>  
- <p>This page help new user to understand our facilities and how our guardian vision works.It provides offer and This deviate user to our 
+ <p>This page help new user to understand our facilities and how our SenitelAI works.It provides offer and This deviate user to our 
  user login page.</p>
 
 <li>  Create Account</li>  
@@ -51,7 +125,7 @@ To use this project, you need to have a webcam connected to your computer. The p
 **Server:** <li> JSON</li>  
  <li> Node</li>
 
-**Mchine Learning** <li> Python </li>
+**Machine Learning** <li> Python </li>
 <li> Flask </li>  
  <li> Yolo Models </li>
 
@@ -83,7 +157,7 @@ Install the Basic libaray
    pip install ultralytics
 ```
 
-## Advantage of Guardian Vision
+## Advantage of SenitelAI
 
 #Challenges in Real-world
 1.Finding Database for ML model
@@ -95,20 +169,4 @@ Install the Basic libaray
 2.Deployment of ML model using Flask libaray.
 3.Sending alert through Python libaray .
 
-## Support
-
-For support, email vigilantsquads@gmail.com
-
-## Team Members 🧑‍🤝‍🧑
-
-- [@maskboyAvi](https://github.com/maskboyAvi)
-- [@aks](https://github.com/atharvsawant2003)
-- [@CSNPSR](https://github.com/PavanaSakethaRam)
-- [@GamezMartian](https://github.com/ydvmudit07)
-- [@ayush_lion](https://github.com/Ayushlion8)
-
- <img src="static\images\WhatsApp Image 2023-04-24 at 01.07.02.jpg" width="900px" height="500p">
-
-## Feedback
-
-You can reach out to us at vigilantsquads@gmail.com where you can give feedbacks or report bugs.
+You can reach out to us at SenitelAI@gmail.com where you can give feedbacks or report bugs.

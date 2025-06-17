@@ -21,7 +21,7 @@ def em(receiver):
         image.add_header('Content-Disposition', 'inline', filename='sp2.jfif')
         message.attach(image)
 
-    sender = "vigilantsquads@gmail.com"
+    sender = ""
     password = "novebhfswebflrzt"
     message['From'] = sender
     message['To'] = receiver
